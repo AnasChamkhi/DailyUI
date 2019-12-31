@@ -1,0 +1,454 @@
+body{
+
+    margin: 0px;
+    padding-top: 0px;
+    
+
+}
+
+.wrapper{
+
+    background-color: black;
+    height: 616px;
+    overflow: hidden; 
+
+}
+
+.hero_image{
+
+    background-image: url(../pics/heropic.jpg);
+    height: 776px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 19%;
+    position: relative;
+    top: 6%;
+
+}
+
+
+.navbar {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+    color: white;
+    margin-top: 41px;
+
+
+}
+
+.navbar>.navbar_logo {
+
+    width: auto;
+    justify-self: start;
+    margin-left: 37px;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.navbar ul {
+
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-self: end; 
+    text-align: center;
+    font-family: "poppins";
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.navbar ul li {
+
+    margin-right: 20px;
+
+}
+
+.cool-link{
+
+    text-decoration: none;
+    color: white;
+    padding-bottom: 30px;        
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e9204f;
+    transition: width .3s;
+    margin-top: 3px;
+    margin-left: 12%;
+}
+
+.cool-link:hover::after {
+    width: 30%;
+    transition: width .3s;
+}
+
+
+.active:after {
+
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background: #e9204f;
+    transition: width .3s;
+
+
+}
+
+.search {
+
+    color: white;
+    cursor: pointer;
+
+}
+
+.navbar> .navbar-menu {
+
+    list-style: none;
+    display: none;
+    grid-template-columns: repeat(1,1fr);
+    justify-self: end; 
+    text-align: center;
+ 
+}
+
+.modal {
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    padding-top: 45px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: hidden;
+    background-color: black /* Black w/ opacity */;
+    -webkit-animation-name: animatemodal;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatemodal;
+    animation-duration: 0.6s;
+
+
+  }
+
+  .close {
+
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    right: 46px; 
+
+
+  }
+
+  
+  .close:hover {
+
+    color: #e9204f;
+
+
+
+  }
+
+
+.modal ul {
+
+
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    justify-self: end;
+    text-align: center;
+    font-family: "poppins";
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 73px;  
+    color: white;
+    transition: all 400ms ease-in;
+
+
+}
+
+.modal ul  li {
+
+    text-decoration: none;
+    color: white;
+    padding-bottom: 30px;   
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 300ms ease-in;
+
+
+}
+
+
+
+.modal ul  li  .home {
+
+    transition-delay: .3s;
+}
+
+.modal ul  li .Services {
+
+    transition-delay: .4s;
+
+
+}
+
+
+
+
+ a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.modal ul  li  a:hover{
+
+    color:  #e9204f;
+  
+}
+
+.modalSearch {
+
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 45px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: hidden;
+    background-color: black /* Black w/ opacity */;
+    -webkit-animation-name: animatemodalS;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatemodalS;
+    animation-duration: 0.6s;
+
+  }
+
+  .Searching {
+
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 55%;
+    float: left;
+    margin-left: 20%;
+    margin-top: 300px;
+    background-color: black;
+    color: white;
+    font-family: poppins;
+    font-weight: 200;
+    font-size: 26px;
+    padding-bottom: 20px;
+
+  }
+
+  .Searching:focus {
+
+
+    border-top: none;
+    border-bottom-color: #e9204f;
+    outline: none;
+
+  
+
+  }
+
+  *:focus {
+    outline: none;
+}
+
+.SearchingIcon{
+
+    color: white;
+    z-index: 999;
+    margin-top: 349px;
+    font-size: 29px;
+    position: relative;
+    right: 38px;
+    bottom: 39px;
+    cursor: pointer;
+
+
+}
+
+.container2{
+
+
+
+    display: grid;
+    grid-template-rows: 0.4fr 2fr 1fr;
+    padding-top: 122px;
+    margin-left: 37px;
+
+
+}
+
+.hr {
+
+    width: 7%;
+    height: 4px;
+    background-color: #e9204f;
+
+
+}
+
+
+.container2 h1{
+    
+    font-size: 72px;
+    color: white;
+    font-family: poppins;
+    margin: 0;
+    line-height: 90px;
+
+}
+
+.button {
+
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: solid;
+    border-color: #e9204f;
+    background-color: black;
+    margin-top: 26px;
+    width: 207px;
+    text-align: center;
+    font-size: 16px;
+    font-family: poppins;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 250%;
+    padding-top: 10px;
+    transition: all .3s;
+
+
+
+  }
+
+  
+  .button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #e9204f;
+    transition: all .5s;
+    z-index: -1;
+
+  }
+ 
+
+  .button:hover:before {
+    width: 100%;
+  }
+  
+
+
+
+
+
+  
+
+
+  
+@keyframes animatemodal {
+    from {left:100px; opacity:0}
+    to {left:0; opacity:1}
+  }
+  @keyframes animatemodalS {
+    from {bottom:100px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+    
+  @keyframes animatemenu {
+
+    0%   { transform: translateX(-10px)}
+    20%   { transform: translateX(10px)}
+    0%   { transform: translateX(-20px)}
+    20%   { transform: translateX(20px)}
+
+
+  }
+  
+
+
+/* ☭☭☭☭☭☭☭☭☭☭☭☭ Responsive menu  ☭☭☭☭☭☭☭☭☭☭☭☭☭*/
+
+@media only screen and (max-width: 1024px) {
+    
+    .navbar ul {
+
+     display: none;
+    
+    }
+
+    .navbar> .navbar-menu {
+
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-self: end; 
+        text-align: center;
+        margin-right: 6%;
+        font-size: 30px;
+        cursor: pointer;
+     
+    }
+    
+
+  }
+  
+
+  @media only screen and (max-width: 722px) {
+
+
+    .container2 {   
+
+
+        padding-top: 0%;
+
+
+    }
+
+
+    .button {
+
+        margin-bottom: 10%;
+
+    }
+
+
+
+
+
+
+  }
+

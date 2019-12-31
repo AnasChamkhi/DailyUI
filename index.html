@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    
+
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="navbar">
+
+            <div class="navbar_logo">
+    
+                Gentium.
+    
+            </div>
+
+            <div class="navbar-menu">
+
+                <i  onclick="Modal()" class="fas fa-bars"></i>
+
+            </div>
+    
+            <ul>
+    
+                <li><a class="cool-link active" id="first" href="#" >Home</a></li>
+                <li><a class="cool-link" href="#" onmouseover="mouseOver()" onmouseout="mouseOut()" >Services</a></li>
+                <li><a class="cool-link" href="#"  onmouseover="mouseOver()" onmouseout="mouseOut()" >Works</a></li>
+                <li><a class="cool-link" href="#" onmouseover="mouseOver()" onmouseout="mouseOut()">About</a></li>
+                <li><a class="cool-link" href="#" onmouseover="mouseOver()" onmouseout="mouseOut()">Client</a></li>
+                <li><a class="cool-link" href="#" onmouseover="mouseOver()" onmouseout="mouseOut()">Blog</a></li>
+                <li><a class="cool-link" href="#" onmouseover="mouseOver()" onmouseout="mouseOut()">Contact</a></li>
+                <li><a class="search" onclick="ModalSearch()"><i class="fas fa-search"></i></a></li>
+    
+    
+            </ul>
+    
+        </div>
+
+
+        <div  id="myModal" class="modal">
+
+
+
+            <i  onclick="Close()" class="fas fa-times close" id="close"></i>
+
+            <ul>
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="Services"><a href="#">Services</a></li>
+                    <li class="Works"><a href="#">Works</a></li>
+                    <li class="About"><a href="#">About</a></li>
+                    <li class="Client"><a href="#">Client</a></li>
+                    <li class="Blog"><a href="#">Blog</a></li>
+                    <li class="Contact"><a href="#">Contact</a></li>
+
+            </ul>
+
+
+
+
+        </div>
+
+
+
+        <div   id="modalSearch" class="modalSearch">
+
+
+            <i  onclick="CloseS()" class="fas fa-times close" id="close"></i>
+
+
+            <input  class="Searching" type="text" name="Search" placeholder="Search">
+            
+            <i class="fas fa-search SearchingIcon"></i>
+
+        
+
+        </div>
+
+    <div class="hero_image">
+
+        <div class="container2">
+
+
+            <div class="hr"></div>
+            <h1>We're a digital <br> agency.</h1>
+            <!-- <button>Getting Started</button> -->
+            <a href="#" class="button">Getting Started</a>
+
+
+            
+
+
+        </div>
+       
+
+
+    </div>
+
+    
+    
+
+    </div>
+
+
+
+
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src='./js/main.js'></script>
+
+
+</body>
+</html>
